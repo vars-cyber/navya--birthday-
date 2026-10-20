@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navya's Birthday Chaos 🎂</title><style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #ffb6d9, #d9b3ff);
+  color: #5a1648;
+  padding: 25px 12px;
+}
+
+.card {
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 25px 18px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px #8b4b8b55;
+}
+
+h1 { font-size: 32px; }
+
+button {
+  background: #ff3f91;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  margin: 9px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#message {
+  font-size: 19px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.emoji {
+  font-size: 38px;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+</style></head><body>
+<div class="card">
+  <div class="emoji">🎂🥳💗</div>  <h1>HAPPY BIRTHDAY, NAVYA!! 🎉</h1>  <p>Welcome to your birthday madness 😂💀</p>  <p>WARNING: This website contains extreme levels of stupidity.</p><button onclick="surprise()">CLICK FOR SURPRISE 🎁</button>
+
+  <div id="message"></div><button onclick="roast()">ROAST ME 😂</button>
+<button onclick="friendship()">FRIENDSHIP MODE 🫶</button>
+
+</div><script>
+const surprises = [
+  "🚨 BREAKING NEWS: Navya has officially become ONE YEAR MORE DRAMATIC! 💀",
+  "🎂 Your age has increased. Your maturity is still loading... 1% 😂",
+  "👑 Congratulations! You are today's queen. Tomorrow, back to being a clown 🤡",
+  "📢 NASA has confirmed that your drama levels are out of this world 🚀",
+  "🎁 Your gift is invisible. Please use your imagination 😭😂",
+  "💅 Stay fabulous, stay crazy, and never let your brain win an argument!"
+];
+
+function surprise() {
+  const random = surprises[Math.floor(Math.random() * surprises.length)];
+  document.getElementById("message").innerHTML = random;
+}
+
+function roast() {
+  document.getElementById("message").innerHTML =
+    "😂 Navya, you're not getting older... you're becoming a limited-edition headache! 💀💗";
+}
+
+function friendship() {
+  document.getElementById("message").innerHTML =
+    "🥹💗 Jokes apart, Navya... I'm really lucky to have you in my life. Thank you for being part of my memories, my madness, and my happiness. No matter how much I roast you, you'll always be special to me. HAPPY BIRTHDAY, BESTIE! 🫂🎂💖";
+}
+</script></body>
+</html>
